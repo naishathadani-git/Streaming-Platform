@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "914d1ee9-7c1b-4ea1-a6fd-b68a74aa6937",
+		"name": "Streaming_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49166683",
+		"_collection_link": "https://naishathadani-6466560.postman.co/workspace/Naisha-Thadani's-Workspace~6ac3f6d0-f6b9-47a0-828c-2ce43a72be2c/collection/49166683-914d1ee9-7c1b-4ea1-a6fd-b68a74aa6937?action=share&source=collection_link&creator=49166683"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n  {\r\n  \"title\": \"Interstellar\",\r\n  \"description\": \"A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.\",\r\n  \"thumbnail_url\": \"https://example.com/interstellar.jpg\",\r\n  \"video_url\": \"https://example.com/interstellar.mp4\",\r\n  \"year\": 2014,\r\n  \"genre\": \"Sci-Fi\",\r\n  \"rating\": 8.6,\r\n  \"duration\": 169,\r\n  \"cast\": \"Matthew McConaughey, Anne Hathaway\",\r\n  \"watch_progress\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/streaming-content",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"streaming-content"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/streaming-content/5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/streaming-content/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"streaming-content",
+						"5"
+					]
+				},
+				"description": "GET content by ID"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/streaming-content",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/streaming-content",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"streaming-content"
+					]
+				},
+				"description": "GET All content"
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n  {\r\n  \"title\": \"Interstellar\",\r\n  \"description\": \"A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.\",\r\n  \"thumbnail_url\": \"https://example.com/interstellar.jpg\",\r\n  \"video_url\": \"https://example.com/interstellar.mp4\",\r\n  \"year\": 2014,\r\n  \"genre\": \"Sci-Fi\",\r\n  \"rating\": 8.6,\r\n  \"duration\": 169,\r\n  \"cast\": \"Matthew McConaughey, Anne Hathaway\",\r\n  \"watch_progress\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/streaming-content",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"streaming-content"
+					]
+				},
+				"description": "POST content"
+			},
+			"response": []
+		},
+		{
+			"name": "Put",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n  {\r\n  \"title\": \"Interstellar 2\",\r\n  \"description\": \"A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.\",\r\n  \"thumbnail_url\": \"https://example.com/interstellar.jpg\",\r\n  \"video_url\": \"https://example.com/interstellar.mp4\",\r\n  \"year\": 2016,\r\n  \"genre\": \"Sci-Fi\",\r\n  \"rating\": 9.1,\r\n  \"duration\": 169,\r\n  \"cast\": \"Matthew McConaughey, Anne Hathaway\",\r\n  \"watch_progress\": 0\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/streaming-content/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"streaming-content",
+						"6"
+					]
+				},
+				"description": "Update content by ID"
+			},
+			"response": []
+		},
+		{
+			"name": "Get By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/streaming-content/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"streaming-content",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/streaming-content",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"streaming-content"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n  {\r\n  \"title\": \"Interstellar 2\",\r\n  \"description\": \"A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.\",\r\n  \"thumbnail_url\": \"https://example.com/interstellar.jpg\",\r\n  \"video_url\": \"https://example.com/interstellar.mp4\",\r\n  \"year\": 2016,\r\n  \"genre\": \"Sci-Fi\",\r\n  \"rating\": 9.1,\r\n  \"duration\": 169,\r\n  \"cast\": \"Matthew McConaughey, Anne Hathaway\",\r\n  \"watch_progress\": 0\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/streaming-content/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"streaming-content",
+						"7"
+					]
+				},
+				"description": "Delete content by ID"
+			},
+			"response": []
+		}
+	]
+}

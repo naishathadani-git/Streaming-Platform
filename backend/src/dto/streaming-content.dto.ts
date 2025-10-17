@@ -3,7 +3,7 @@ import { Transform } from 'class-transformer';
 
 export class CreateStreamingContentDto {
   @IsString()
-  title: string;
+  title!: string;
 
   @IsString()
   @IsOptional()
@@ -14,7 +14,7 @@ export class CreateStreamingContentDto {
   thumbnail_url?: string; // snake_case from JSON
 
   @IsString()
-  video_url: string; // required
+  video_url!: string; // required
 
   @IsNumber()
   @IsOptional()

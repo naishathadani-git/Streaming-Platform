@@ -8,37 +8,37 @@ import {
 @Entity('streaming_content')
 export class StreamingContent {
   @PrimaryGeneratedColumn()
-  id: number;
+  id!: number;
 
   @Column({ length: 255 })
-  title: string;
+  title!: string;
   @Column({ type: 'text', nullable: true })
-  description: string;
+  description!: string;
 
   @Column({ name: 'thumbnail_url', nullable: true })
-  thumbnailUrl: string;
+  thumbnailUrl!: string;
 
   @Column({ name: 'video_url', nullable: false })
-  videoUrl: string;
+  videoUrl!: string;
 
   @Column({ type: 'int', nullable: true })
-  year: number;
+  year!: number;
 
   @Column({ length: 100, nullable: true })
-  genre: string;
+  genre!: string;
 
   @Column({ type: 'decimal', precision: 2, scale: 1, nullable: true })
-  rating: number;
+  rating!: number;
 
   @Column({ type: 'int', nullable: true })
-  duration: number;
+  duration!: number;
 
   @Column({ type: 'text', nullable: true })
-  cast: string;
+  cast!: string;
 
   @Column({ name: 'watch_progress', type: 'float', default: 0 })
-  watchProgress: number;
+  watchProgress!: number;
 
   @CreateDateColumn({ name: 'created_at' })
-  createdAt: Date;
+  createdAt!: Date;
 }
