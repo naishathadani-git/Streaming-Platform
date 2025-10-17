@@ -5,8 +5,8 @@ import {
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { StreamingContent } from 'src/entities/streaming-content.entity';
-import { CreateStreamingContentDto } from 'src/dto/streaming-content.dto';
+import { StreamingContent } from '../../entities/streaming-content.entity';
+import { CreateStreamingContentDto } from '../../dto/streaming-content.dto';
 
 @Injectable()
 export class StreamingContentService {

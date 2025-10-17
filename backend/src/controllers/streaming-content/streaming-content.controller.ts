@@ -8,9 +8,9 @@ import {
   Body,
   NotFoundException,
 } from '@nestjs/common';
-import { StreamingContentService } from 'src/services/streaming-content/streaming-content.service';
-import { StreamingContent } from 'src/entities/streaming-content.entity';
-import { CreateStreamingContentDto } from 'src/dto/streaming-content.dto';
+import { StreamingContentService } from '../../services/streaming-content/streaming-content.service';
+import { StreamingContent } from '../../entities/streaming-content.entity';
+import { CreateStreamingContentDto } from '../../dto/streaming-content.dto';
 import { UseGuards } from '@nestjs/common';
 import { JwtAuthGuard } from '../../services/auth/jwt-auth.guard';
 
