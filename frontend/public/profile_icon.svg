@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Profile icon">
+  <defs>
+    <radialGradient id="g" cx="30%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#7F7FD5"/>
+      <stop offset="60%" stop-color="#86A8E7"/>
+      <stop offset="100%" stop-color="#91EAE4"/>
+    </radialGradient>
+    <filter id="f" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#f)">
+    <circle cx="256.0" cy="256.0" r="248.0" fill="url(#g)"/>
+  </g>
+
+  <text x="50%" y="52%" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif"
+        font-size="200" font-weight="700" fill="white" dominant-baseline="middle">RB</text>
+
+  <!-- subtle ring -->
+  <circle cx="256.0" cy="256.0" r="252.0" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="8"/>
+</svg>
